@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Header.css';
 
-class Header extends Component {
-    render() {
-        return (
-            <header>
-                <h1>Ask Peeves</h1>
-            </header>
-        );
-    };
-};
+const Header = () => {
+    return (
+        <header>
+            <h1>Ask Peeves</h1>
+            <p>Need a spell?</p>
+            <a href="" >
+                <i className="fas fa-angle-double-down"></i>
+            </a>
+        </header>
+    )
+}
 
 export default Header; 

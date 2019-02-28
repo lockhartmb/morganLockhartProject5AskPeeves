@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Footer.css';
 
-class Footer extends Component {
-    render() {
-        return (
-            <footer>
-                <p>Brought to you by Morgan Lockhart, HackerYou 2019.</p>
-            </footer>
-        );
-    };
-};
+const Footer = () => {
+    return (
+        <footer>
+            <div className="wrapper">
+                <p>Brought to you by <a href="http://www.morganlockhart.com">Morgan Lockhart</a>, HackerYou 2019, using the <a href="https://www.potterapi.com/">Harry Potter API</a>. Thanks <a href="https://twitter.com/_kristenspencer">Kristen</a>!</p>
+            </div>
+        </footer>
+    )
+}
 
 export default Footer;

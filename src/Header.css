@@ -1,10 +1,16 @@
-html {
+body {
     font-size: 125%;
+    font-family: 'Abril Fatface', cursive;
 }
 
 img {
     width: 100%;
     display: block;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
 }
 
 header {
@@ -29,4 +35,30 @@ h1 {
     width: 100%;
     font-size: 2rem;
     text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+header p {
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    padding: 20px 0;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+.fa-angle-double-down {
+    font-size: 2rem;
+    animation: flash 1.5s infinite;
+    padding-top: 65px;
+}
+
+@keyframes flash {
+    0% {
+        color: rgba(255,255,255,0.5);
+    }
+    
+    50% {
+        color: black;
+    }
+    100% {
+        color: rgba(255,255,255,0.5);
+    }
 }
