@@ -1,14 +1,15 @@
 import React from 'react';
 import './Header.css';
+import { Link } from "react-scroll";
 
 const Header = () => {
     return (
         <header>
             <h1>Ask Peeves</h1>
             <p>Need a spell?</p>
-            <a href="" >
-                <i className="fas fa-angle-double-down"></i>
-            </a>
+            <Link activeClass="active" to="form" spy={true} smooth={true} offset={0} duration={1800}>
+                <i className="fas fa-bolt"></i>
+            </Link>
         </header>
     )
 }

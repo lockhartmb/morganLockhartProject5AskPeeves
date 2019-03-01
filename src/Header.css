@@ -39,15 +39,20 @@ h1 {
 
 header p {
     background-color: rgba(255,255,255,0.5);
+    font-size: 1.4rem;
     width: 100%;
     padding: 20px 0;
     text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
-.fa-angle-double-down {
+.fa-bolt {
     font-size: 2rem;
     animation: flash 1.5s infinite;
     padding-top: 65px;
+}
+
+.fa-bolt:hover {
+    cursor: pointer;
 }
 
 @keyframes flash {
@@ -56,7 +61,8 @@ header p {
     }
     
     50% {
-        color: black;
+        color: rgba(255, 215, 0, 0.8);
+        transform: scale(1.2);
     }
     100% {
         color: rgba(255,255,255,0.5);

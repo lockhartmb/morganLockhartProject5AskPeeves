@@ -17,6 +17,9 @@ form button {
     width: 45%;
     margin-bottom: 10px;
     background-color: rgba(255, 215, 0, 0.5);
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 form button:nth-child(2n+1) {

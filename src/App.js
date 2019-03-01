@@ -38,18 +38,21 @@ class App extends Component {
     })
   }
 
-  handleClick = (event) => {
+  handleClick = async(event) => {
     event.preventDefault();
     let userSelection = event.target.id;
     let subArray = this.state.allSpells.filter(spell => {
       return spell.type === userSelection;
     })
     
-    this.setState({
+    await this.setState({
       userArray: subArray,
     })
+      
+    
 
     let randomSpell = this.state.userArray[Math.floor(Math.random() * this.state.userArray.length)];
+    console.log(randomSpell.spell);
     this.setState({
       randomSpell: randomSpell.spell
     })
