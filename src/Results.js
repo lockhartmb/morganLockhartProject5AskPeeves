@@ -9,8 +9,8 @@ const Results = (props) => {
             <div className="wrapper">
                 <div className="resultsBox">
                     <h2>Why not try:</h2>
-                        <p className="randomSpellName">{props.displaySpellName}</p>
-                        <p className="randomSpellEffect">{props.displaySpellEffect}</p>
+                    <p className="randomSpellName">{props.displaySpellName}</p>
+                    <p className="randomSpellEffect">{props.displaySpellEffect}</p>
                     <h3>Not quite what you're looking for?</h3>
                     <button className="gold" onClick={props.handleNewSpell}>Get a new spell</button>
                 </div>

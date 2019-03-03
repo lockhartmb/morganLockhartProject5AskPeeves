@@ -61,7 +61,7 @@ class App extends Component {
     let randomSpell = this.state.userArray[Math.floor(Math.random() * this.state.userArray.length)];
     this.setState({
       randomSpellName: randomSpell.spell,
-      randomSpellEffect: `It ${randomSpell.effect}`
+      randomSpellEffect: randomSpell.effect
     })
   }
 
@@ -71,7 +71,7 @@ class App extends Component {
     let newRandomSpell = this.state.userArray[Math.floor(Math.random() * this.state.userArray.length)];
     this.setState({
       randomSpellName: newRandomSpell.spell,
-      randomSpellEffect: `It ${newRandomSpell.effect}`
+      randomSpellEffect: newRandomSpell.effect
     })
   }
 
