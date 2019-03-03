@@ -3,32 +3,48 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: grey;
+    /* background-image: linear-gradient(to top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(assets/hogwartsHallway.jpg); */
+    /* background-size: cover; */
+    /* background-position: center center; */
 }
 
 h2 {
-    padding: 0;
-    padding-bottom: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px 0;
     margin: 0;
+    font-size: 1.8rem;
+}
+
+form a {
+    padding: 0;
+    border: 3px ridge rgb(255, 215, 0);
+    width: calc((100% - 40px) / 2);
+    margin: 10px;
+    background-color: rgba(255, 215, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 form button {
-    padding: 10px;
-    border: 3px ridge rgb(255, 215, 0);
-    width: 45%;
-    margin-bottom: 10px;
-    background-color: rgba(255, 215, 0, 0.5);
-    font-family: 'Abel', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-form button:nth-child(2n+1) {
-    margin-right: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    height: 80px;
+    background-color: rgba(255, 215, 0);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2rem;
 }
 
 .options {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }

@@ -9,3 +9,11 @@ footer p {
     padding: 20px 0;
     margin: 0;
 }
+
+footer a {
+    color: #e2e2e2;
+}
+
+footer a:visited {
+    color: rgb(255, 215, 0);
+}

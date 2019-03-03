@@ -16,7 +16,8 @@ class App extends Component {
       allSpells: [],
       userArray: [],
       usersLocationChoice: '',
-      randomSpell: ''
+      randomSpellName: '',
+      randomSpellEffect: ''
     }
   }
 
@@ -48,13 +49,20 @@ class App extends Component {
     await this.setState({
       userArray: subArray,
     })
-      
-    
 
     let randomSpell = this.state.userArray[Math.floor(Math.random() * this.state.userArray.length)];
-    console.log(randomSpell.spell);
     this.setState({
-      randomSpell: randomSpell.spell
+      randomSpellName: randomSpell.spell,
+      randomSpellEffect: `It ${randomSpell.effect}`
+    })
+  }
+
+  handleNewSpell = (event) => {
+    event.preventDefault();
+    let newRandomSpell = this.state.userArray[Math.floor(Math.random() * this.state.userArray.length)];
+    this.setState({
+      randomSpellName: newRandomSpell.spell,
+      randomSpellEffect: `It ${newRandomSpell.effect}`
     })
   }
 
@@ -67,11 +75,11 @@ class App extends Component {
             handleClick={this.handleClick}
           />
           <Results 
-            displayResults={this.randomSpell}
+            displaySpellName={this.state.randomSpellName}
+            displaySpellEffect={this.state.randomSpellEffect}
+            handleNewSpell={this.handleNewSpell}
           />
         </main>
-
-
         <Footer />
       </div>
     );
