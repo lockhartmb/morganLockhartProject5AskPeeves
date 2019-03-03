@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
+// My footer is a simple component because it doesn't need to hold state. It doesn't give or take any information.
 const Footer = () => {
     return (
         <footer>

@@ -1,9 +1,9 @@
+/* Results section styles start here */
 .results {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(assets/magicWand.jpg);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(assets/magicWand.jpg); /* Photo by Emy Girard on Unsplash */
     background-size: cover;
     background-position: center center;
-    /* filter: grayscale(100%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +11,7 @@
 
 .results h2 {
     background-color: transparent;
+    padding: 0;
 }
 
 .resultsBox {
@@ -20,42 +21,38 @@
 
 .randomSpellName {
     font-size: 2.2rem;
-    padding: 0;
+    padding-top: 40px;
     margin: 0;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 .randomSpellEffect {
     font-size: 1rem;
+    animation: fade-in 0.5s linear;
+    padding: 20px 0 40px 0;
+}
+
+.results h3 {
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 .results button {
-    padding: 15px;
+    width: 60%;
+    max-width: 200px;
+    height: auto;
     border: 3px ridge rgb(255, 215, 0);
-    background-image: linear-gradient(to bottom right, #c6821d, #f6e67f, #c6821d);
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.2rem;
     transform: translateY(0);
-    transition: 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
 }
 
 .results button:active {
-    transform: translateY(2px);
+    transform: translateY(4px);
 }
 
 .results button:focus {
-    border: 3px dotted gold;
-}
-
-.fadeIn {
-    animation: fade-in 0.7s linear;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    border: 3px groove grey;
 }

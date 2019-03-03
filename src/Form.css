@@ -1,12 +1,12 @@
+/* Form styles start here */
 form {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: grey;
-    /* background-image: linear-gradient(to top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(assets/hogwartsHallway.jpg); */
-    /* background-size: cover; */
-    /* background-position: center center; */
+    background-image: url(assets/greyBackground.png); /* Background image from https://www.toptal.com/designers/subtlepatterns/grey-jean/ */
+    background-size: auto;
+    background-position: center center;
 }
 
 h2 {
@@ -14,43 +14,8 @@ h2 {
     padding: 20px 0;
     margin: 0;
     font-size: 1.8rem;
-}
-
-form a {
-    padding: 0;
-    border: 3px groove rgb(255, 215, 0);
-    width: calc((100% - 40px) / 2);
-    margin: 10px;
-    background-color: rgba(255, 215, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(0);
-    transition: transform 0.15s ease-in-out;
-}
-
-form button {
-    width: 100%;
-    padding: 5px;
-    border: 0;
-    height: 80px;
-    background-image: linear-gradient(to bottom right, #c6821d, #f6e67f, #c6821d);
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.2rem;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-form a:active {
-    transform: translateY(2px);
-}
-
-form button:focus {
-    /* background-image: linear-gradient(to bottom right, black, white, black); */
-    /* color: #c6821d; */
-    transform: scale(1.1);
+    letter-spacing: 8px;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 .options {
@@ -59,4 +24,62 @@ form button:focus {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+form a {
+    padding: 0;
+    border: 3px groove rgb(255, 215, 0);
+    width: calc((100% - 40px) / 2);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: transform 0.15s ease-in-out;
+}
+
+a:active {
+    transform: translateY(4px);
+}
+
+.gold {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    height: 80px;
+    background-image: linear-gradient(to bottom right, #c6821d, #f6e67f, #c6821d);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+/* This is for a shine effect on the buttons, code largely inspired by https://codepen.io/fishtoyo/pen/VYQVQx */
+.gold:after {
+	content: '';
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 0;
+	height: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.gold:hover:after {
+    width: 100%;
+    background-color: rgba(255,255,255,0);
+	-webkit-transition: all 0.75s ease-in-out;
+	-moz-transition: all 0.75s ease-in-out;
+	transition: all 0.75s ease-in-out;
+}
+
+.gold:focus {
+    border: 3px groove grey;
+}
+
+@media (min-width: 750px) {
+    .options {
+        width: 75%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
