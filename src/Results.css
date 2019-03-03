@@ -29,11 +29,21 @@
 }
 
 .results button {
-    padding: 5px;
+    padding: 15px;
     border: 3px ridge rgb(255, 215, 0);
-    background-color: rgba(255, 215, 0);
+    background-image: linear-gradient(to bottom right, #c6821d, #f6e67f, #c6821d);
     font-family: 'Abril Fatface', cursive;
     font-size: 1.2rem;
+    transform: translateY(0);
+    transition: 0.15s ease-in-out;
+}
+
+.results button:active {
+    transform: translateY(2px);
+}
+
+.results button:focus {
+    border: 3px dotted gold;
 }
 
 .fadeIn {

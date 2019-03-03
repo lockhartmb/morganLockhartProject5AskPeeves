@@ -18,17 +18,15 @@ h2 {
 
 form a {
     padding: 0;
-    border: 3px ridge rgb(255, 215, 0);
+    border: 3px groove rgb(255, 215, 0);
     width: calc((100% - 40px) / 2);
     margin: 10px;
     background-color: rgba(255, 215, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-button:hover {
-    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.15s ease-in-out;
 }
 
 form button {
@@ -36,9 +34,23 @@ form button {
     padding: 5px;
     border: 0;
     height: 80px;
-    background-color: rgba(255, 215, 0);
+    background-image: linear-gradient(to bottom right, #c6821d, #f6e67f, #c6821d);
     font-family: 'Abril Fatface', cursive;
     font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+form a:active {
+    transform: translateY(2px);
+}
+
+form button:focus {
+    /* background-image: linear-gradient(to bottom right, black, white, black); */
+    /* color: #c6821d; */
+    transform: scale(1.1);
 }
 
 .options {

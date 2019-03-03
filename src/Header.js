@@ -8,9 +8,27 @@ const Header = () => {
             <div className="wrapper">
                 <h1>Ask Peeves</h1>
                 <p>Need a spell?</p>
-                <Link activeClass="active" to="form" spy={true} smooth={true} offset={0} duration={1800}>
-                    <i className="fas fa-bolt"></i>
+                <Link
+                    activeClass="active"
+                    to="form"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1800}>
+                    <button>
+                        <i className="fas fa-bolt"></i>
+                    </button>
                 </Link>
+                {/* <Link
+                    activeClass="active"
+                    to="form"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1800}
+                    tabIndex="0">
+                    <i className="fas fa-bolt"></i>
+                </Link> */}
             </div>
         </header>
     )
