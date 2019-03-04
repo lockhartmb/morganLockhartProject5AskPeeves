@@ -1,6 +1,6 @@
 /* Results section styles start here */
 .results {
-    min-height: 100vh;
+    min-height: 75vh;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(assets/magicWand.jpg); /* Photo by Emy Girard on Unsplash */
     background-size: cover;
     background-position: center center;
@@ -42,8 +42,8 @@
 
 .results button {
     width: 60%;
-    max-width: 200px;
-    height: auto;
+    max-width: 215px;
+    height: 69px;
     border: 3px ridge rgb(255, 215, 0);
     transform: translateY(0);
     transition: transform 0.15s ease-in-out;
@@ -55,4 +55,33 @@
 
 .results button:focus {
     border: 3px groove grey;
+}
+
+.results .newPlace {
+    margin-top: 20px;
+}
+
+@media (min-width: 750px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .links > * {
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .results .newPlace {
+        margin: 0;
+    }
+
+    .results .newPlace button {
+        width: 100%;
+    }
 }

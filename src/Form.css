@@ -1,6 +1,6 @@
 /* Form styles start here */
 form {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
