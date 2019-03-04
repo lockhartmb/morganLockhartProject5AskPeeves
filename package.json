@@ -1,7 +1,7 @@
 {
   "name": "morgan-lockhart-project5",
   "version": "0.1.0",
-  "homepage": "https://lockhartmb.github.io/project5/",
+  "homepage": "https://lockhartmb.github.io/morganLockhartProject5AskPeeves/",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
