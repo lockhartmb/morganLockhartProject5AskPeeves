@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/morganLockhartProject5AskPeeves/precache-manifest.76476c67df6eeca15557f332f648e735.js"
+  "/morganLockhartProject5AskPeeves/precache-manifest.966fa0a9d0b4a2c1ead1659ace0553e1.js"
 );
 
 workbox.clientsClaim();
