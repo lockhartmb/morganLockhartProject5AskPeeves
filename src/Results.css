@@ -1,6 +1,6 @@
 /* Results section styles start here */
 .results {
-    min-height: 75vh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(assets/magicWand.jpg); /* Photo by Emy Girard on Unsplash */
     background-size: cover;
     background-position: center center;
@@ -16,7 +16,8 @@
 
 .resultsBox {
     background-color: rgba(255,255,255,0.5);
-    padding: 20px 0;
+    padding: 20px;
+    margin: 30px 0;
 }
 
 .randomSpellName {
@@ -28,7 +29,6 @@
 
 .randomSpellEffect {
     font-size: 1rem;
-    animation: fade-in 0.5s linear;
     padding: 20px 0 40px 0;
 }
 
@@ -47,14 +47,6 @@
     border: 3px ridge rgb(255, 215, 0);
     transform: translateY(0);
     transition: transform 0.15s ease-in-out;
-}
-
-.results button:active {
-    transform: translateY(4px);
-}
-
-.results button:focus {
-    border: 3px groove grey;
 }
 
 .results .newPlace {

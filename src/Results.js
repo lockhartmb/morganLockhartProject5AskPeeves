@@ -2,11 +2,10 @@ import React from 'react';
 import './Results.css';
 import { Link } from "react-scroll";
 
-
 // My Results section is also a simple component because it doesn't need state. It does receive information from App.js through props though! 
 const Results = (props) => {
     return (
-        <section className="results" id="results">
+        <section name="results" className="results" id="results">
             <div className="wrapper">
                 <div className="resultsBox">
                     <h2>Why not try:</h2>

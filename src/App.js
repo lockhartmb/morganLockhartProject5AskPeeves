@@ -5,6 +5,7 @@ import Form from './Form.js';
 import Results from './Results.js';
 import Footer from './Footer.js';
 import axios from 'axios';
+import { scroller} from 'react-scroll'
 
 const apiKey = `$2a$10$S62Y1Ef47zvjTRLZdbVEcO33PQQotdJ.vQIFCmACGySFL0trAhm..`;
 const apiUrl = `https://www.potterapi.com/v1/spells/`;
@@ -53,7 +54,8 @@ class App extends Component {
     let subArray = this.state.allSpells.filter(spell => {
       return spell.type === userSelection;
     })
-    // userArray is the subset of spells that are appropriate for the location the user selected.
+
+    // userArray is the subset of spells that are appropriate for the location the user selected. Changing showResults to true, will cause the Results section to render.
     await this.setState({
       userArray: subArray,
       showResults: true
@@ -65,6 +67,12 @@ class App extends Component {
       randomSpellName: randomSpell.spell,
       randomSpellEffect: randomSpell.effect
     })
+
+    // Once showResults becomes true, and a random spell is generated, then scroll down to the top of the Results section. 
+    scroller.scrollTo('results', {
+      duration: 1200,
+      smooth: true,
+    });
   }
 
   // Function for if a user wants to get a new spell in the same category, it does not re-filter, it just finds a new random spell, so it only updates state of randomSpellName and randomSpellEffect.
