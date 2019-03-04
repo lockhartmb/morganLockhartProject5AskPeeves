@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/project5/precache-manifest.8dd83c4ba470f0af201c4d6c910ac718.js"
+  "/morganLockhartProject5AskPeeves/precache-manifest.76476c67df6eeca15557f332f648e735.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/project5/index.html", {
+workbox.routing.registerNavigationRoute("/morganLockhartProject5AskPeeves/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
